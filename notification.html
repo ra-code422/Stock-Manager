@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Gestion</title>
+    <link rel="stylesheet" href="./notification.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="conteneur">
+        <input type="checkbox" id="menu">
+        <label for="menu" class="overlay"></label>
+        <nav class="navbar">
+            <div class="menu-sidebar">
+                <label for="menu" class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+            <h2>
+                Gestion de Stock - Produits Électroniques
+            </h2>
+            <div class="navbar-icone">
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="trois">
+                        3
+                    </div>
+                </div>
+                <div class="admis">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p>Administrateur</p>
+                </div>
+            </div>
+
+        </nav>
+        <aside class="sidebar">
+            <h2>
+                <span>
+                    <i class="fa-solid fa-chart-line"></i>
+                </span>
+                Dashboard
+            </h2>
+            <hr>
+            <ul>
+                <li>
+                    <a href="tableau-de-bord.html">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span>
+                            Tableau de bord
+
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./analytics.html">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>
+                            Analytics
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./commandes.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>
+                            Commandes
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./parametre.html">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>
+                            Paramètres
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./rapport.html">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <span>
+                            Rapports
+                        </span>
+                    </a>
+                </li>
+                <li class="couleur">
+                    <a href="./notification.html">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>
+                            Notifications
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="gestion">
+                <div class="admi-gestionnaire">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div class="admi-gest">
+                        <a href="#">Administrateur</a>
+                        <h6>Gestionnaire</h6>
+                    </div>
+                </div>
+                <div class="profil">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href="#conteneur1">Mon Profil</a>
+                </div>
+                <div class="deconnexion">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <a href="./index.html">Déconnexion</a>
+                </div>
+            </div>
+
+        </aside>
+
+        <div class="conteneur1" id="conteneur1">
+            <div class="carde">
+                <div class="box element">
+                    <div class="mon-profil">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <p>Mon Profil</p>
+                    </div>
+                    <a href="./dashboard.html" class="icone">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </div>
+                <div class="changer-photo">
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="changer la photo">
+                    </div>
+                </div>
+                <form action="">
+                    <div class="nom">
+                        <div class="les-label">
+                            <label for="nom">Nom :</label>
+                            <input type="text" placeholder="Administrateur">
+                        </div>
+                        <div class="les-label">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" placeholder="sadia">
+                        </div>
+                    </div>
+                    <div class="nom">
+                        <div class="les-label">
+                            <label for="email">Email :</label>
+                            <input type="email" placeholder="admin@dashboard.com">
+                        </div>
+                        <div class="les-label">
+                            <label for="tel">Téléphone :</label>
+                            <input type="tel" placeholder="+33 6 12 56 89 90">
+                        </div>
+                    </div>
+                    <div class="les-label">
+                        <label for="role">Role :</label>
+                        <input type="text" placeholder="Gestionnaire">
+                    </div>
+                    <div class="les-label">
+                        <label for="derniere">Dernière Connexion :</label>
+                        <input type="datetime" placeholder="08 novembre 2025 à 01 : 04">
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="fermer">
+                        <input type="button" value="Sauvegarder" id="Sauvegarder">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="conteneur2">
+            <div class="para">
+                <h1>
+                    Notifications & Alertes
+                </h1>
+                <p>
+                    Centre de notification et gestion des alertes système
+                </p>
+            </div>
+            <div class="box-des-stocks">
+                <div class="stocks">
+                    <div class="box-icone1">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="produits">
+                        <h2>12</h2>
+                        <p>
+                            Non lues
+                        </p>
+                    </div>
+                </div>
+                <div class="stocks">
+                    <div class="box-icone2 notification1">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="produits">
+                        <h2>3</h2>
+                        <p>
+                            urgentes
+                        </p>
+                    </div>
+                </div>
+                <div class="stocks">
+                    <div class="box-icone3">
+                        <i class="fa-solid fa-calendar"></i>
+                    </div>
+                    <div class="produits">
+                        <h2>23</h2>
+                        <p>
+                            Aujourd'hui
+                        </p>
+                    </div>
+                </div>
+                <div class="stocks">
+                    <div class="box-icone4">
+                        <i class="fa-solid fa-list"></i>
+                    </div>
+                    <div class="produits">
+                        <h2>156</h2>
+                        <p>
+                            Total
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="type">
+                <div class="rapport1">
+                    <label for="rapport"> Types :</label>
+                    <select>
+                        <option value="vente">Toutes</option>
+                        <option value="vente">Stocks</option>
+                        <option value="vente">Commandes</option>
+                        <option value="vente">Système</option>
+                        <option value="vente">Sécurité</option>
+                    </select>
+                </div>
+                <div class="rapport1">
+                    <label for="rapport">Période :</label>
+                    <select>
+                        <option value="vente">Toutes</option>
+                        <option value="vente">Urgent</option>
+                        <option value="vente">Haute</option>
+                        <option value="vente">Moyenne</option>
+                        <option value="vente">Basse</option>
+                    </select>
+                </div>
+                <div class="rapport1">
+                    <label for="rapport"> Statuts :</label>
+                    <select>
+                        <option value="vente">Toutes</option>
+                        <option value="vente">Non lues</option>
+                        <option value="vente">Lues</option>
+                    </select>
+                </div>
+                <div class="rapport1 generer">
+                    <button><i class="fa-solid fa-martini-glass"></i><span>Filtrer</span></button>
+                </div>
+            </div>
+
+            <div>
+                <div class="carde2">
+                    <div class="conteneur-circle">
+                        <div class="circle">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                    </div>
+                    <div class="stocks-critique">
+                        <h3>
+                            Stocks critique détecté
+                        </h3>
+                        <p>
+                            Le Produits "Airpods Pro 2" a atteint le seuil critique de stocks (3 unités restantes).
+                            veuillez
+                            passer Commandés rapidements
+                        </p>
+                        <div class="Messagerie">
+                            <div class="passer-une-commende gris">
+                                Passer Commande
+                            </div>
+                            <div class="passer-une-commende white">
+                                Marquer comme lu
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Il y a 5 minutes
+                    </div>
+                </div>
+                <div class="carde2 carde3">
+                    <div class="conteneur-circle">
+                        <div class="circle blue-circle">
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                    </div>
+                    <div class="stocks-critique">
+                        <h3>
+                            Nouvelle commandes reçue
+                        </h3>
+                        <p>
+                            commande # CMD-2024-004 reçue de marie Dubois pour une MacBooks Pro 16"(€2,899.00)
+                        </p>
+                        <div class="Messagerie">
+                            <div class="passer-une-commende blue">
+                                Voir la Commande
+                            </div>
+                            <div class="passer-une-commende white">
+                                Marquer comme lu
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Il y a 15 minutes
+                    </div>
+                </div>
+                <div class="carde2 carde4">
+                    <div class="conteneur-circle">
+                        <div class="circle green-circle">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                    </div>
+                    <div class="stocks-critique">
+                        <h3>
+                            Commandes Expédiée
+                        </h3>
+                        <p>
+                            commande # CMD-2024-004 a été Expédiée avec succès. Numéro de suivi : 123456789
+                        </p>
+                        <div class="Messagerie">
+                            <div class="passer-une-commende blue-sky">
+                                Suivre l'envoi
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Il y a 1 heure
+                    </div>
+                </div>
+                <div class="carde2 carde4">
+                    <div class="conteneur-circle">
+                        <div class="circle gray-circle">
+                            <i class="fa-solid fa-gear"></i>
+                        </div>
+                    </div>
+                    <div class="stocks-critique">
+                        <h3>
+                            Sauvegarder automatique terminé
+                        </h3>
+                        <p>
+                            Sauvegarder quotidienne des données terminé avec succès. 2.3 GB de données Sauvegardées.
+                        </p>
+                        <div class="Messagerie">
+                            <div class="passer-une-commende white">
+                                Voir les détails
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Il y a 2 heures
+                    </div>
+                </div>
+                <div class="carde2 carde4">
+                    <div class="conteneur-circle">
+                        <div class="circle yellow-circle">
+                            <i class="fa-solid fa-shield"></i>
+                        </div>
+                    </div>
+                    <div class="stocks-critique">
+                        <h3>
+                            Connexion depuis un autre appareil
+                        </h3>
+                        <p>
+                            Connexion detectée depuis une Nouvelle appareil (iPhone,paris,France). changer votre mot de
+                            passe.
+                        </p>
+                        <div class="Messagerie">
+                            <div class="passer-une-commende gris">
+                                Sécuriser le Compte
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        Il y a 3 heures
+                    </div>
+                </div>
+                <div class="carde5">
+                    <div>
+                        <input type="checkbox">
+                        <span>
+                            Sélectionner tout
+                        </span>
+                    </div>
+                    <div class="carde6">
+                        <div class="carde-box color1">
+                            <span> <i class="fa-solid fa-check"></i></span>
+                            <span>Marquer comme lu</span>
+                        </div>
+                        <div class="carde-box color2">
+                            <span>
+                                <i class="fa-solid fa-trash"></i>
+                            </span>
+                            <span>
+                                Supprimer
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

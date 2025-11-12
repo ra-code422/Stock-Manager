@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Gestion</title>
+    <link rel="stylesheet" href="./parametre.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="conteneur">
+        <input type="checkbox" id="menu">
+        <label for="menu" class="overlay"></label>
+        <nav class="navbar">
+            <div class="menu-sidebar">
+                <label for="menu" class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+            <h2>
+                Gestion de Stock - Produits Électroniques
+            </h2>
+            <div class="navbar-icone">
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="trois">
+                        3
+                    </div>
+                </div>
+                <div class="admis">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p>Administrateur</p>
+                </div>
+            </div>
+
+        </nav>
+        <aside class="sidebar">
+            <h2>
+                <span>
+                    <i class="fa-solid fa-chart-line"></i>
+                </span>
+                Dashboard
+            </h2>
+            <hr>
+            <ul>
+                <li>
+                    <a href="tableau-de-bord.html">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span>
+                            Tableau de bord
+
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./analytics.html">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>
+                            Analytics
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./commandes.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>
+                            Commandes
+                        </span>
+                    </a>
+                </li>
+                <li class="couleur">
+                    <a href="./parametre.html">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>
+                            Paramètres
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./rapport.html">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <span>
+                            Rapports
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./notification.html">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>
+                            Notifications
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="gestion">
+                <div class="admi-gestionnaire">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div class="admi-gest">
+                        <a href="#">Administrateur</a>
+                        <h6>Gestionnaire</h6>
+                    </div>
+                </div>
+                <div class="profil">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href="#conteneur1">Mon Profil</a>
+                </div>
+                <div class="deconnexion">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <a href="./index.html">Déconnexion</a>
+                </div>
+            </div>
+
+        </aside>
+
+        <div class="conteneur1" id="conteneur1">
+            <div class="carde">
+                <div class="box element">
+                    <div class="mon-profil">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <p>Mon Profil</p>
+                    </div>
+                    <a href="./dashboard.html" class="icone">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </div>
+                <div class="changer-photo">
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="changer la photo">
+                    </div>
+                </div>
+                <form action="">
+                    <div class="nom">
+                        <div class="les-label">
+                            <label for="nom">Nom :</label>
+                            <input type="text" placeholder="Administrateur">
+                        </div>
+                        <div class="les-label">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" placeholder="sadia">
+                        </div>
+                    </div>
+                    <div class="nom">
+                        <div class="les-label">
+                            <label for="email">Email :</label>
+                            <input type="email" placeholder="admin@dashboard.com">
+                        </div>
+                        <div class="les-label">
+                            <label for="tel">Téléphone :</label>
+                            <input type="tel" placeholder="+33 6 12 56 89 90">
+                        </div>
+                    </div>
+                    <div class="les-label">
+                        <label for="role">Role :</label>
+                        <input type="text" placeholder="Gestionnaire">
+                    </div>
+                    <div class="les-label">
+                        <label for="derniere">Dernière Connexion :</label>
+                        <input type="datetime" placeholder="08 novembre 2025 à 01 : 04">
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="fermer">
+                        <input type="button" value="Sauvegarder" id="Sauvegarder">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="conteneur2">
+            <div class="para">
+                <h1>
+                    <span><i class="fa-solid fa-gears"></i></span>
+                    Paramètre & configuration
+                </h1>
+                <p>
+                    Configuration du système et préférences utilisateur
+                </p>
+            </div>
+            <div class="carde1">
+                <div class="title-tableau">
+                    <h2>
+                        <span>
+                            <i class="ri-equalizer-line"></i>
+                        </span>
+                        Paramètres Généraux
+                    </h2>
+                </div>
+                <div class="carde2">
+                    <div class="notification">
+                        <div class="recevoir">
+                            <h4>
+                                Notifications
+                            </h4>
+                            <p>
+                                Recevoir des notifications par email
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="recevoir">
+                            <h4>
+                                Mode sombre
+                            </h4>
+                            <p>
+                                Activer le thème sombre
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="recevoir">
+                            <h4>
+                                Auto-sauvegarde
+                            </h4>
+                            <p>
+                                Sauvegarder automatiquement les modifications
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="recevoir">
+                            <h4>
+                                Auto-sauvegarde
+                            </h4>
+                            <p>
+                                Sauvegarder automatiquement les modifications
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <select>
+                                <option value="langue">Français</option>
+                                <option value="langue">English</option>
+                                <option value="langue">Espagnol</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carde1">
+                <div class="title-tableau">
+                    <h2>
+                        <span>
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </span>
+                        Gestion de Stock
+                    </h2>
+                </div>
+                <div class="carde2">
+                    <div class="notification">
+                        <div class="recevoir">
+                            <h4>
+                                Seuil d'alerte
+                            </h4>
+                            <p>
+                                Nombre minimum d'article avant alerte
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <div class="un-input">
+                                <input type="number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="recevoir">
+                            <h4>
+                                Auto-commandes
+                            </h4>
+                            <p>
+                                commandes automatiquement en cas de Stock faible
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="recevoir">
+                            <h4>
+                                Devise
+                            </h4>
+                            <p>
+                                Devise d'affichage
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <select>
+                                <option value="langue">Euro(€)</option>
+                                <option value="langue">Dollar($)</option>
+                                <option value="langue">Livre sterling(£)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carde1">
+                <div class="title-tableau">
+                    <h2>
+                        <span>
+                            <i class="fa-solid fa-shield"></i>
+                        </span>
+                        Sécurité
+                    </h2>
+                </div>
+                <div class="carde2">
+                    <div class="notification">
+                        <div class="recevoir">
+                            <h4>
+                                Authentification à deux facteurs
+                            </h4>
+                            <p>
+                                Activer la 2FA pour plus de Sécurité
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <div class="un-input1 gray">
+                                Activer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="recevoir">
+                            <h4>
+                                changer de Mot de passe
+                            </h4>
+                            <p>
+                                Modifier votre mot de passe actuel
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <div class="un-input1 white">
+                                Changer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notification">
+                        <div class="recevoir">
+                            <h4>
+                                sessions activer
+                            </h4>
+                            <p>
+                                Gérer les section connectées
+                            </p>
+                        </div>
+                        <div class="btn">
+                            <div class="un-input1 bleu-claire">
+                                Voir(3)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carde1">
+                <div class="title-tableau">
+                    <h2>
+                        <span>
+                           <i class="fa-solid fa-database"></i>
+                        </span>
+                        système
+                    </h2>
+                </div>
+                <div class="carde2 carde3">
+                    <div class="systeme bleu1">
+                        <span>
+                            <i class="fa-solid fa-file"></i>
+                        </span>
+                        <span>
+                            Sauvegarder la configuration
+                        </span>
+                    </div>
+                    <div class="systeme blanc">
+                        <span>
+                           <i class="fa-solid fa-download"></i>
+                        </span>
+                        <span>
+                            Exporter les Paramètre
+                        </span>
+                    </div>
+                    <div class="systeme grise1">
+                        <span>
+                           <i class="fa-solid fa-rotate-right"></i>
+                        </span>
+                        <span>
+                            Réinitialiser par défaut
+                        </span>
+                    </div>
+                    <div class="systeme grise2">
+                        <span>
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                        <span>
+                            Effacer toutes les données
+                        </span>
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+</body>
+
+</html>

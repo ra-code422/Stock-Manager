@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Gestion</title>
+    <link rel="stylesheet" href="./analytics.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="conteneur">
+        <input type="checkbox" id="menu">
+        <label for="menu" class="overlay"></label>
+        <nav class="navbar">
+            <div class="menu-sidebar">
+                <label for="menu" class="menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+            <h2>
+                Gestion de Stock - Produits Électroniques
+            </h2>
+            <div class="navbar-icone">
+                <div class="notification">
+                    <i class="fa-solid fa-bell"></i>
+                    <div class="trois">
+                        3
+                    </div>
+                </div>
+                <div class="admis">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <p>Administrateur</p>
+                </div>
+            </div>
+
+        </nav>
+        <aside class="sidebar">
+            <h2>
+                <span>
+                    <i class="fa-solid fa-chart-line"></i>
+                </span>
+                Dashboard
+            </h2>
+            <hr>
+            <ul>
+                <li>
+                    <a href="tableau-de-bord.html">
+                        <i class="fa-solid fa-gauge"></i>
+                        <span>
+                            Tableau de bord
+
+                        </span>
+                    </a>
+                </li>
+                <li class="couleur">
+                    <a href="./analytics.html">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>
+                            Analytics
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./commandes.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>
+                            Commandes
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./parametre.html">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>
+                            Paramètres
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./rapport.html">
+                        <i class="fa-solid fa-chart-bar"></i>
+                        <span>
+                            Rapports
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./notification.html">
+                        <i class="fa-solid fa-bell"></i>
+                        <span>
+                            Notifications
+                        </span>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="gestion">
+                <div class="admi-gestionnaire">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div class="admi-gest">
+                        <a href="#">Administrateur</a>
+                        <h6>Gestionnaire</h6>
+                    </div>
+                </div>
+                <div class="profil">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <a href="#conteneur1">Mon Profil</a>
+                </div>
+                <div class="deconnexion">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <a href="./index.html">Déconnexion</a>
+                </div>
+            </div>
+
+        </aside>
+
+        <div class="conteneur1" id="conteneur1">
+            <div class="carde">
+                <div class="box element">
+                    <div class="mon-profil">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <p>Mon Profil</p>
+                    </div>
+                    <a href="./dashboard.html" class="icone">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </div>
+                <div class="changer-photo">
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="changer la photo">
+                    </div>
+                </div>
+                <form action="">
+                    <div class="nom">
+                        <div class="les-label">
+                            <label for="nom">Nom :</label>
+                            <input type="text" placeholder="Administrateur">
+                        </div>
+                        <div class="les-label">
+                            <label for="prenom">Prénom :</label>
+                            <input type="text" placeholder="sadia">
+                        </div>
+                    </div>
+                    <div class="nom">
+                        <div class="les-label">
+                            <label for="email">Email :</label>
+                            <input type="email" placeholder="admin@dashboard.com">
+                        </div>
+                        <div class="les-label">
+                            <label for="tel">Téléphone :</label>
+                            <input type="tel" placeholder="+33 6 12 56 89 90">
+                        </div>
+                    </div>
+                    <div class="les-label">
+                        <label for="role">Role :</label>
+                        <input type="text" placeholder="Gestionnaire">
+                    </div>
+                    <div class="les-label">
+                        <label for="derniere">Dernière Connexion :</label>
+                        <input type="datetime" placeholder="08 novembre 2025 à 01 : 04">
+                    </div>
+                    <div class="btn">
+                        <input type="button" value="fermer">
+                        <input type="button" value="Sauvegarder" id="Sauvegarder">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="conteneur2">
+            <div class="para">
+                <h1>
+                    <i class="fa-solid fa-chart-line"></i>
+                    Analytics & Rapports
+                </h1>
+                <p>
+                    Analyse complete des plateformances et Tendences
+                </p>
+            </div>
+            <div class="box-des-stocks">
+                <div class="stocks">
+                    <div class="box-icone1">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="produits">
+                        <h2>€45,678</h2>
+                        <p>chiffre d'affaires</p>
+                        <p class="vert">+12.5%</p>
+                    </div>
+                </div>
+                <div class="stocks ">
+                    <div class="box-icone2 analytics1">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="produits">
+                        <h2>1,234</h2>
+                        <p>Commandes</p>
+                        <p class="vert">+8,2%</p>
+                    </div>
+                </div>
+                <div class="stocks ">
+                    <div class="box-icone3 analytics2">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <div class="produits">
+                        <h2>856</h2>
+                        <p>Nouveaux clients</p>
+                        <p class="rouge">-2.1%</p>
+                    </div>
+                </div>
+                <div class="stocks ">
+                    <div class="box-icone4 analytics3">
+                        <i class="fa-solid fa-percent"></i>
+                    </div>
+                    <div class="produits">
+                        <h2>3.4%</h2>
+                        <p>Taux de conversion</p>
+                        <p class="vert">+0.3%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="evolution-et-repartition">
+                <div class="evolution">
+                    <div class="titre-de-corbe">
+                        <h3>
+                            <span><i class="fa-solid fa-chart-area"></i></span>
+                            Évolution des ventes
+                        </h3>
+                        <select>
+                            <option value="jour7">7 dernieres jours</option>
+                            <option value="jour30">30 derniere jours</option>
+                            <option value="jour90">90 derniere jours</option>
+                        </select>
+                    </div>
+                    <div class="courbe">
+                        <div class="courbe-en-bande">
+                            <div class="bande">
+                                <div class="janvier"></div>
+                                <div class="paragraphe">
+                                    <h6>Jan</h6>
+                                    <p>€8,500</p>
+                                </div>
+                            </div>
+                            <div class="bande">
+                                <div class="fevrier"></div>
+                                <div class="paragraphe">
+                                    <h6>Fév</h6>
+                                    <p>€9,200</p>
+                                </div>
+                            </div>
+                            <div class="bande">
+                                <div class="mars"></div>
+                                <div class="paragraphe">
+                                    <h6>Mar</h6>
+                                    <p>€7,8OO</p>
+                                </div>
+                            </div>
+                            <div class="bande">
+                                <div class="avirl"></div>
+                                <div class="paragraphe">
+                                    <h6>Avr</h6>
+                                    <p>€9,5OO</p>
+                                </div>
+                            </div>
+                            <div class="bande">
+                                <div class="mai"></div>
+                                <div class="paragraphe">
+                                    <h6>Mai</h6>
+                                    <p>€8,800</p>
+                                </div>
+                            </div>
+                            <div class="bande">
+                                <div class="juin"></div>
+                                <div class="paragraphe">
+                                    <h6>Jun</h6>
+                                    <p>€9,600</p>
+                                </div>
+                            </div>
+                            <div class="bande">
+                                <div class="juillet"></div>
+                                <div class="paragraphe">
+                                    <h6>Jul</h6>
+                                    <p>€8,200</p>
+                                </div>
+                            </div>
+                            <div class="bande">
+                                <div class="aout"></div>
+                                <div class="paragraphe">
+                                    <h6>Aou</h6>
+                                    <p>€8,900</p>
+                                </div>
+                            </div>
+                            <div class="bande">
+                                <div class="septembre"></div>
+                                <div class="paragraphe">
+                                    <h6>sept</h6>
+                                    <p>€8,900</p>
+                                </div>
+                            </div>
+                            <div class="bande">
+                                <div class="octobre"></div>
+                                <div class="paragraphe">
+                                    <h6>Oct</h6>
+                                    <p>€8,900</p>
+                                </div>
+                            </div>
+                            <div class="bande">
+                                <div class="novembre"></div>
+                                <div class="paragraphe">
+                                    <h6>Nov</h6>
+                                    <p>€8,900</p>
+                                </div>
+                            </div>
+                            <div class="bande">
+                                <div class="decembre"></div>
+                                <div class="paragraphe">
+                                    <h6>Déc</h6>
+                                    <p>€8,900</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ventes-objectifs">
+                            <div class="circle-vente">
+                                <div class="circle blue"></div>
+                                <p>Ventes Réelles</p>
+                            </div>
+                            <div class="circle-vente">
+                                <div class="circle green"></div>
+                                <p>Objectifs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="repartition-categorie">
+                    <div class="entete">
+                        <h3>
+                            <span><i class="fa-solid fa-chart-bar"></i></span>
+                            Répartition par Catégorie
+                        </h3>
+                    </div>
+                    <div class="tablette">
+                        <div class="repartition">
+                            <div class="smartphones">
+                                <p>Smartphones</p>
+                                <div class="euro">
+                                    €15,890
+                                </div>
+                            </div>
+                            <div class="pourcentage">
+                                <div class="ligne"></div>
+                                <div class="percent">35%</div>
+                            </div>
+                        </div>
+                        <div class="repartition">
+                            <div class="smartphones">
+                                <p>Laptops</p>
+                                <div class="euro">
+                                    €15,890
+                                </div>
+                            </div>
+                            <div class="pourcentage">
+                                <div class="ligne"></div>
+                                <div class="percent">25%</div>
+                            </div>
+                        </div>
+                        <div class="repartition">
+                            <div class="smartphones">
+                                <p>Tablettes</p>
+                                <div class="euro">
+                                    €15,890
+                                </div>
+                            </div>
+                            <div class="pourcentage">
+                                <div class="ligne"></div>
+                                <div class="percent">20%</div>
+                            </div>
+                        </div>
+                        <div class="repartition">
+                            <div class="smartphones">
+                                <p>Accessoires</p>
+                                <div class="euro">
+                                    €15,890
+                                </div>
+                            </div>
+                            <div class="pourcentage">
+                                <div class="ligne"></div>
+                                <div class="percent">20%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="tableau-top">
+                <div class="top-produit">
+                    <div class="element1">
+                        <h2>
+                            <i class="fa-solid fa-trophy"></i>
+                            Top Produits
+                        </h2>
+                    </div>
+                    <div class="element2">
+                        <select>
+                            <option value="vente">Par Ventes</option>
+                            <option value="vente">Par revenus</option>
+                            <option value="vente">par marge</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rang1 gras">
+                    <div class="rang-produit1 gras">
+                        <div>Rang</div>
+                        <div>Produit</div>
+                    </div>
+                    <div class="rang-produit2 gras">
+                        <div>Ventes</div>
+                        <div>Revenus</div>
+                        <div>Marges</div>
+                    </div>
+                </div>
+                <div class="rang1">
+                    <div class="rang-produit1">
+                        <div class="jaune yellow">1</div>
+                        <div class="apple">
+                            <span>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </span>
+                            <p>
+                                iPhone 15 Pro
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rang-produit2">
+                        <div>234</div>
+                        <div>€280,866</div>
+                        <div>€42,130</div>
+                    </div>
+                </div>
+                <div class="rang1">
+                    <div class="rang-produit1">
+                        <div class="jaune gray">2</div>
+                        <div class="apple">
+                            <span>
+                                <i class="fa-solid fa-laptop"></i>
+                            </span>
+                            <p>
+                                iPhone 15 Pro
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rang-produit2">
+                        <div>89</div>
+                        <div>€257,911</div>
+                        <div>€51,582</div>
+                    </div>
+                </div>
+                <div class="rang1">
+                    <div class="rang-produit1">
+                        <div class="jaune orange1">3</div>
+                        <div class="apple">
+                            <span>
+                                <i class="fa-solid fa-headphones"></i>
+                            </span>
+                            <p>
+                                iPhone 15 Pro
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rang-produit2">
+                        <div>445</div>
+                        <div>€144,155</div>
+                        <div>€18,623</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
