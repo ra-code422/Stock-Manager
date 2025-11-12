@@ -380,6 +380,11 @@ a span {
     padding: 30px;
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+}
+.stocks:hover{
+    transform: translateY(-12px);
 }
 
 .stocks p {
@@ -1039,6 +1044,14 @@ textarea {
 
     #menu:checked~.overlay {
         display: block;
+    }
+    .carde1{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .status1 select{
+        width: 700px;
     }
 }
 

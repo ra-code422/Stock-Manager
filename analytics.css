@@ -378,6 +378,11 @@ a span {
     padding: 30px;
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.stocks:hover {
+    transform: translateY(-12px);
 }
 
 .stocks p {
@@ -463,14 +468,20 @@ a span {
     padding: 20px;
 }
 
-.titre-de-corbe select, .element2 select {
-   width: 200px;
-    border: solid #ccc;
+.titre-de-corbe select,
+.element2 select {
+    width: 200px;
+    border: solid #ddd;
     outline: none;
     padding: 6px;
     border-radius: 5px;
     font-weight: 600;
 }
+.titre-de-corbe select:focus,
+.element2 select:focus {
+   border: solid 2px;
+}
+
 .courbe {
     display: flex;
     justify-content: start;
@@ -488,10 +499,7 @@ a span {
     padding: 20px;
 }
 
-.bande {}
-
 .paragraphe {
-    border: solid;
     margin-top: 20px;
     text-align: center;
 }
@@ -521,8 +529,25 @@ a span {
 .decembre {
     width: 80px;
     background-color: #2A70EE;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.janvier:hover,
+.fevrier:hover,
+.mars:hover,
+.avirl:hover,
+.mai:hover,
+.juin:hover,
+.juillet:hover,
+.aout:hover,
+.septembre:hover,
+.octobre:hover,
+.novembre:hover,
+.decembre:hover {
+    background-color: #3287e8;
+    transform: translateY(-12px);
 }
 
 .janvier {
@@ -600,92 +625,109 @@ a span {
 
 
 }
-.repartition{
+
+.repartition {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
     padding: 20px;
 }
-.smartphones{
+
+.smartphones {
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
     width: 100%;
 }
+
 .smartphones p {
     font-weight: bold;
 }
-.pourcentage{
+
+.pourcentage {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10px;
     gap: 10px;
 }
-.entete{
+
+.entete {
     padding: 20px;
     background-color: #ddd;
 }
-.ligne{
+
+.ligne {
     width: 500px;
     height: 5px;
     background-color: #ddd;
 }
-.euro{
+
+.euro {
     color: #2A70EE;
     font-weight: 600;
 }
+
 /* troisieme tableau */
-.tableau-top{
+.tableau-top {
     /* width: 100%; */
     margin-top: 30px;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
-    border-radius:10px ;
+    border-radius: 10px;
     overflow: hidden;
 }
-.top-produit{
+
+.top-produit {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-bottom:solid #ddd ;
+    border-bottom: solid #ddd;
 }
-.element1{
+
+.element1 {
     padding: 15px;
 }
-.element2{
+
+.element2 {
     display: flex;
     justify-content: end;
     align-items: center;
     padding: 15px;
 }
-.rang1{
+
+.rang1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: solid #ddd;
 }
-.rang-produit1{
+
+.rang-produit1 {
     display: flex;
-    justify-content:start;
+    justify-content: start;
     gap: 80px;
     padding: 15px;
 }
-.rang-produit2{
+
+.rang-produit2 {
     display: flex;
     justify-content: end;
     gap: 100px;
     padding: 15px;
 }
-.apple{
+
+.apple {
     display: flex;
     justify-content: start;
     align-items: start;
     gap: 30px;
 }
-.gras{
+
+.gras {
     font-weight: 600;
-    background-color: #ddd;;
+    background-color: #ddd;
+    ;
 }
 
-.jaune{
+.jaune {
     width: 30px;
     height: 30px;
     border-radius: 50px;
@@ -694,13 +736,16 @@ a span {
     align-items: center;
     color: #fff;
 }
-.yellow{
+
+.yellow {
     background-color: #FAA804;
 }
-.gray{
+
+.gray {
     background-color: #777B8A;
 }
-.orange1{
+
+.orange1 {
     background-color: #DE8206;
 }
 
@@ -883,6 +928,48 @@ a span {
     #menu:checked~.overlay {
         display: block;
     }
+
+    .evolution-et-repartition {
+        grid-template-columns: 1fr;
+    }
+
+    .courbe {
+        margin-top: 20px;
+    }
+
+    .courbe-en-bande {
+        gap: 12px;
+        width: 100%;
+        padding: 20px;
+    }
+    .paragraphe {
+        margin-top: 20px;
+    }
+
+    .paragraphe p {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    .paragraphe h6 {
+        font-size: 10px;
+    }
+
+    .janvier,
+    .fevrier,
+    .mars,
+    .avirl,
+    .mai,
+    .juin,
+    .juillet,
+    .aout,
+    .septembre,
+    .octobre,
+    .novembre,
+    .decembre {
+        width: 45px;
+    }
+
 }
 
 @media (max-width:425px) {

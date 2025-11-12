@@ -64,7 +64,7 @@ body {
   margin-top: 10px;
 }
 .souvenir input{
-    accent-color:#17446E;
+    color:#17446E;
 }
 
 #btn {
@@ -79,7 +79,7 @@ body {
 }
 
 .btn:hover {
-  background-color:#173755;
+  background-color:#1F4E7E;
 }
 .inscription {
   font-size:16px;

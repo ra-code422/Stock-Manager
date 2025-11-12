@@ -378,6 +378,11 @@ a span {
     padding: 30px;
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+}
+.stocks:hover{
+    transform: translateY(-12px);
 }
 
 .stocks p {
@@ -767,6 +772,36 @@ margin-top: 20px;
     #menu:checked~.overlay {
         display: block;
     }
+    .type {
+        flex-direction: column;
+        width: 100%;
+}
+
+.rapport1 {
+    width: 100%;
+}
+
+.rapport1 select {
+    width: 100%;
+}
+
+.generer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+.generer button{
+    width: 100%;
+}
+.carde2 {
+    grid-template-columns: 1fr;
+}
+.conteneur-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 
 @media (max-width:425px) {

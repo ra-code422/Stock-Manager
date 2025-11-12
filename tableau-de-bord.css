@@ -378,6 +378,10 @@ a span {
     padding: 30px;
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.stocks:hover{
+    transform: translateY(-12px);
 }
 
 .stocks p {
@@ -492,6 +496,7 @@ border: none;
 table{
     width: 100%;
     border-collapse:collapse;
+
 }
 
 td{
@@ -543,85 +548,27 @@ td,th{
   }
   .longue{
     width:130px;
+    padding: 6px;
   }
   .moyenne{
     width: 60px;
+    padding: 6px;
   }
   .petit{
     width: 30px;
+    padding: 6px;
   }
   .tableau{
     background-color: #ffffff;
     border-radius: 20px;
     width: 100%;
+    overflow: hidden;
   }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* madia querry */
 @media (max-width:1024px) {
     .conteneur {
         grid-template-columns: 250px 1fr;
@@ -729,7 +676,7 @@ td,th{
         height: 100%;
         display: none;
         background: rgba(0, 0, 0, 0.4);
-        z-index: 999;
+        z-index: 9999;
     }
 
     #menu:checked~.sidebar {
@@ -738,6 +685,14 @@ td,th{
 
     #menu:checked~.overlay {
         display: block;
+    }
+    .titre-des-tableau{
+        grid-template-columns: 1fr; 
+    }
+    .div, .recherche, .ajouter{
+        justify-content: start;
+    }
+    .tableau{
     }
 }
 

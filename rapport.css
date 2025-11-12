@@ -378,7 +378,9 @@ a span {
     padding: 30px;
     background-color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
+
 
 .stocks p {
     color: #888585;
@@ -470,7 +472,8 @@ a span {
     align-items: center;
     border-radius: 6px;
 }
-.generer button{
+
+.generer button {
     padding: 12px;
     background-color: #2A70EE;
     margin-top: 30px;
@@ -479,22 +482,24 @@ a span {
     border-radius: 6px;
     color: white;
     font-weight: 600;
-   
+
 
 }
-.generer button span{
+
+.generer button span {
     margin-left: 10px;
 }
 
 
-.carde1{
+.carde1 {
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    
+
 }
-.box1{
+
+.box1 {
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -503,10 +508,10 @@ a span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
+
 }
 
-.un-icone{
+.un-icone {
     height: 60px;
     width: 60px;
     background-color: #2A70EE;
@@ -516,16 +521,19 @@ a span {
     align-items: center;
     color: #fff;
 }
-.un-icone i{
-    font-size:2rem;
+
+.un-icone i {
+    font-size: 2rem;
 }
-.contenu{
+
+.contenu {
     display: flex;
     justify-content: center;
     align-items: start;
     gap: 20px;
 }
-.chiffre-d-affaire{
+
+.chiffre-d-affaire {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -534,14 +542,17 @@ a span {
     line-height: 1.6;
 
 }
-.chiffre p{
-    color:#2A70EE;
+
+.chiffre p {
+    color: #2A70EE;
     font-weight: 600;
 }
-.chiffre span{
+
+.chiffre span {
     color: #898585;
 }
-.les-details{
+
+.les-details {
     width: 100px;
     border: solid #ddd;
     text-align: center;
@@ -552,28 +563,32 @@ a span {
 }
 
 /* tableau */
-.tableau-histioriques{
+.tableau-histioriques {
     margin-top: 50px;
     background-color: #ffffff;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
 }
-.title-historique{
-padding: 40px;
-background-color: #ddd;
+
+.title-historique {
+    padding: 40px;
+    background-color: #ddd;
 }
-.entete{
+
+.entete {
     padding: 40px;
 }
-.titre-tableau{
+
+.titre-tableau {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
     padding: 30px;
     background-color: #ddd;
 }
-.contenu-du-tableau{
+
+.contenu-du-tableau {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     border-bottom: solid #ddd;
@@ -787,6 +802,29 @@ background-color: #ddd;
 
     #menu:checked~.overlay {
         display: block;
+    }
+
+    .type {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rapport1 {
+        width: 100%;
+    }
+
+    .rapport1 select {
+        width: 100%;
+    }
+
+    .carde1 {
+        grid-template-columns: 1fr;
+
+    }
+
+    .box1 {
+        align-items: start;
+        flex-direction: row;
     }
 }
 
